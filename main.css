@@ -1,0 +1,232 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f3ebe4;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;    
+}
+.container{
+    background-color: white;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.container .image img{
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+
+}
+
+@font-face {
+    font-family: "Fraunces";
+    src: url(Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(Montserrat-VariableFont_wght.ttf);
+}
+
+.container .container-info .product p{
+    font-family: Montserrat;
+    letter-spacing: 5px;
+    font-weight: 300;
+    font-size: 10px;
+    color: rgb(99, 98, 98);
+    margin-bottom: 15px;
+    margin-top: 5px;
+ }
+ 
+ .container .container-info{
+     padding: 10px;
+     margin-right: 20px;
+     margin-left: 10px;
+ }
+ 
+ .container .title-info h1{
+     font-family: 'fraunces', serif;
+     font-size: 25px;
+     line-height: 1;
+     margin-bottom: 15px;
+ }
+ .container .title-info p{
+     font-family:Montserrat ;
+     font-size: 13px;
+     line-height: 1.5;
+     margin-bottom: 15px;
+     color: gray;
+ }
+ .container .price{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ 
+ }
+ .container .price .offer{
+     font-family:fraunces;
+     color: rgba(59,123,99,255);
+     font-size: 25px;
+     font-weight: 700;
+     
+ }
+ .container .price .older-price{
+     font-family: montserrat;
+     text-decoration: line-through;
+     color: gray;
+     font-size: 10px;
+ }
+ 
+ .button{
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 20px;
+     background-color:rgba(59,123,99,255) ;
+     border-radius: 5px;
+     cursor: pointer;
+ }
+ 
+ .button p{
+     color: white;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     font-family: montserrat;
+     font-weight: 600;
+     font-size: small;
+ }
+ 
+ .button:hover{
+     background-color:rgba(26,64,49,255) ;
+     transition: 0.2s;
+     box-shadow: rgba(0, 0, 0, 0.4) 4px 4px 4px ;
+ }
+ 
+ .button:not(:hover){
+     transition: 0.2s;
+ }
+
+@media screen and (min-width: 992px) {
+    body {
+        background-color: #f3ebe4;
+        display: flex;
+        min-height: 100vh;
+        justify-content: center;
+        align-items: center;    
+    }
+
+    .container{
+        width: 600px;
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+    }
+    
+    .container .image img{
+        width: 300px;
+        height: 480px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        display: block;
+        align-items: flex-start;
+        object-fit: cover;
+    }
+    
+    @font-face {
+        font-family: "Fraunces";
+        src: url(Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+    }
+    
+    @font-face {
+        font-family: "Montserrat";
+        src: url(Montserrat-VariableFont_wght.ttf);
+    }
+    .container .container-info .product p{
+       font-family: Montserrat;
+       letter-spacing: 5px;
+       font-weight: 300;
+       font-size: small;
+       color: rgb(99, 98, 98);
+       margin-bottom: 25px;
+    }
+    
+    .container .container-info{
+        padding: 20px;
+        margin-right: 20px;
+    }
+    
+    .container .title-info h1{
+        font-family: 'fraunces', serif;
+        font-size: 35px;
+        line-height: 1;
+        margin-bottom: 25px;
+    }
+    .container .title-info p{
+        font-family:Montserrat ;
+        font-size: 13px;
+        line-height: 1.7;
+        margin-bottom: 25px;
+        color: gray;
+    }
+    .container .price{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    
+    }
+    .container .price .offer{
+        font-family:fraunces;
+        color: rgba(59,123,99,255);
+        font-size: 35px;
+        font-weight: 700;
+        
+    }
+    .container .price .older-price{
+        font-family: montserrat;
+        text-decoration: line-through;
+        color: gray;
+        font-size: 15px;
+    }
+    
+    .button{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        background-color:rgba(59,123,99,255) ;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .button p{
+        color: white;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-family: montserrat;
+        font-weight: 600;
+        font-size: small;
+    }
+    
+    .button:hover{
+        background-color:rgba(26,64,49,255) ;
+        transition: 0.2s;
+        box-shadow: rgba(0, 0, 0, 0.4) 4px 4px 4px ;
+    }
+    
+    .button:not(:hover){
+        transition: 0.2s;
+    }
+  }
